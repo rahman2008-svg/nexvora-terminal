@@ -1,0 +1,27 @@
+workflows:
+  nexvora-terminal-android:
+    name: NexVora Terminal Android
+    instance_type: mac_mini_m2
+
+    environment:
+      java: 17
+
+    scripts:
+      - name: Make Gradle Wrapper executable
+        script: |
+          chmod +x ./gradlew
+
+      - name: Build APK
+        script: |
+          ./gradlew assembleDebug --stacktrace
+
+    artifacts:
+      - "**/build/outputs/apk/debug/*.apk"
+
+    publishing:
+      email:
+        recipients:
+          - $CM_EMAIL
+        notify:
+          success: true
+          failure: true
