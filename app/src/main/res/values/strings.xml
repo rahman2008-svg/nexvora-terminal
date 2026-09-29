@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NexVora Terminal</string>
+    <string name="app_tagline">Code • Run • Build • Anywhere</string>
+    <string name="developer_name">Prince AR Abdur Rahman</string>
+    <string name="publisher_name">NexVora Lab’s Ofc</string>
+    <string name="version_name">1.0.0</string>
+</resources>

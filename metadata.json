@@ -1,0 +1,6 @@
+{
+  "name": "NexVora Terminal",
+  "description": "Code • Run • Build • Anywhere - Modern Android-first mobile development workstation with real terminal, code editor, git, and build tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
